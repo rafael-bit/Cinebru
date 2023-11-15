@@ -1,0 +1,84 @@
+.carousel-inner div img
+{
+  height: 30em;
+}
+
+.TProg
+{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 0 2rem;
+  background-color: red;
+  width: 17rem;
+  border-radius: 30px;
+  color: white;
+}
+
+.Produtos
+{
+  background-color: red;
+  padding-top: 0.1rem;
+}
+
+.Produtos .TProg
+{
+  background-color: white;
+  color: red;
+}
+
+.Produtos .card
+{
+  height: 100%;
+}
+
+#carouselExampleIndicators .carousel-control-prev
+{
+  margin: auto 2rem;
+}
+
+#carouselExample .carousel-control-prev, .carousel-control-next
+{
+  margin: auto 2rem;
+}
+
+.carousel-control-prev, .carousel-control-next
+{
+  height: 3rem;
+  width: 3rem;
+  background-color: black;
+  border-radius: 50px;
+}
+
+#carouselMI
+{
+  display: flex;
+}
+
+#carouselMI .carousel-item
+{
+  display: block;
+  margin-right: 0;
+  padding: 1em 1em;
+}
+
+.btn-primary
+{
+  bottom: 0;
+}
+
+#carouselMIP
+{
+  display: flex;
+}
+
+#carouselMIP .carousel-item
+{
+  display: block;
+  margin-right: 0;
+  padding: 1em 1em;
+}
+
+#carouselMIP .carousel-item img
+{
+  height: 16rem;
+}

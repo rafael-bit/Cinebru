@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Filmes</h2>
+  <input type="text" [(ngModel)]="searchTerm" (input)="filterMovies()" placeholder="Pesquisar filmes" />
+
+  <table class="table table-striped mt-5 mb-5">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título Traduzido</th>
+        <th>Gênero</th>
+        <th>Direção</th>
+        <th>País de Origem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <td>{{ movie.id }}</td>
+        <td><a [routerLink]="['/filme-detalhes', movie.id]">{{ movie.titulo_traduzido }}</a></td>
+        <td>{{ movie.genero }}</td>
+        <td>{{ movie.direcao }}</td>
+        <td>{{ movie.pais_origem }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,125 @@
+<div class="body">
+  <div class="container">
+    <main>
+        <div class="py-5 text-center">
+            <h2>Cadastro Filmes</h2>
+            <p class="lead">Preencha as informações a seguir e insira o filme no sistema</p>
+          </div>
+        <div class="row g-12">
+            <div class="col-md-10 col-lg-10">
+                <h4 class="mb-3">Dados do Filme</h4>
+                <form class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <label for="tituloOriginal" class="form-label">Titulo Original</label>
+                      <input type="text" class="form-control" id="tituloOriginal" placeholder="Ex: Avengers: Endgame" value="" required>
+                      <div class="invalid-feedback">
+                        Titulo original invalido.
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <label for="tituloTraduzido" class="form-label">Titulo Traduzido</label>
+                      <input type="text" class="form-control" id="tituloTraduzido" placeholder="Ex: Vingadores: Ultimato" value="" required>
+                      <div class="invalid-feedback">
+                        Titulo traduzido invalido.
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="genero" class="form-label">Gênero</label>
+                        <select class="form-select" id="genero" required>
+                          <option value="">Escolha...</option>
+                          <option>Ação</option>
+                          <option>Aventura</option>
+                          <option>Fantasia</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid country.
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="direcao" class="form-label">Direção</label>
+                        <input type="text" class="form-control" id="direcao" placeholder="Ex: Anthony Russo" value="" required>
+                        <div class="invalid-feedback">
+                          País de origem invalido.
+                        </div>
+                      </div>
+
+                    <div class="col-12">
+                      <label for="paisOrigem" class="form-label">País de Origem</label>
+                      <input type="text" class="form-control" id="paisOrigem" placeholder="Ex: EUA" value="" required>
+                      <div class="invalid-feedback">
+                        País de origem invalido.
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="idioma" class="form-label">Idioma</label>
+                      <select class="form-select" id="idioma" required>
+                        <option value="">Escolha...</option>
+                        <option>Inglês</option>
+                        <option>Português</option>
+                        <option>Espanhol</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please provide a valid language.
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="legenda" class="form-label">Legenda</label>
+                        <select class="form-select" id="legenda" required>
+                          <option value="">Escolha...</option>
+                          <option>Inglês</option>
+                          <option>Português</option>
+                          <option>Espanhol</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please provide a valid subtitle.
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="duracao" class="form-label">Duração</label>
+                        <input type="text" class="form-control" id="duracao" placeholder="Ex: 180 minutos" value="" required>
+                        <div class="invalid-feedback">
+                            Duração invalida.
+                        </div>
+                      </div>
+
+                    <div class="col-12">
+                        <label for="paisOrigem" class="form-label">Nota</label>
+                        <input type="text" class="form-control" id="paisOrigem" placeholder="Ex: 6/10" value="" required>
+                        <div class="invalid-feedback">
+                            Nota invalida.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="date" class="form-label">Lançamento</label>
+                        <input type="date" class="form-control" id="lancamento" value="" required>
+                        <div class="invalid-feedback">
+                            Data invalida.
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <label for="sinopse" class="form-label">Sinopse</label>
+                      <textarea class="form-control" id="sinopse" rows="5" placeholder="Breve história do filme...."></textarea>
+                      <div class="invalid-feedback">
+                        Sinopse required.
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr class="my-4">
+
+                  <button class="w-100 btn btn-primary btn-lg" type="submit">Continue</button>
+                </form>
+            </div>
+        </div>
+    </main>
+  </div>
+</div>

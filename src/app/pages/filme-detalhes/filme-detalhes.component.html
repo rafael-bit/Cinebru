@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Detalhes do Filme</h2>
+  <div *ngIf="movie">
+      <div class="row mt-5">
+          <div class="col-md-3">
+              <img src="{{ movie.img }}" alt="foto do filme" class="img-fluid">
+          </div>
+          <div class="col-md-9">
+              <h3>{{ movie.titulo_traduzido }}</h3>
+              <p><strong>Gênero:</strong> {{ movie.genero }}</p>
+              <p><strong>Direção:</strong> {{ movie.direcao }}</p>
+              <p><strong>País de Origem:</strong> {{ movie.pais_origem }}</p>
+              <p><strong>Idioma:</strong> {{ movie.idioma }}</p>
+              <p><strong>Legenda:</strong> {{ movie.legenda }}</p>
+              <p><strong>Duração:</strong> {{ movie.duracao }}</p>
+              <p><strong>Nota:</strong> {{ movie.nota }}</p>
+              <p><strong>Lançamento:</strong> {{ movie.lancamento }}</p>
+              <p><strong>Sinopse:</strong> {{ movie.sinopse }}</p>
+          </div>
+      </div>
+  </div>
+</div>
