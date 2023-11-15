@@ -13,7 +13,7 @@ export class FilmeDetalhesComponent implements OnInit {
   constructor(private route: ActivatedRoute, private filmeService: FilmeService) { }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
+    this.route.paramMap.subscribe((params: { get: (arg0: string) => any; }) => {
       const id = Number(params.get('id'));
       this.filmeService.getMovieById(id).subscribe((data: any) => {
         this.movie = data;
